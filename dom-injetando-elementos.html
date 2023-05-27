@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="dom-injetando-elementos.js" defer></script>
+</head>
+<body>
+
+    <h1>DOM Injetando elementos na arvore</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <section>
+        <h3 class="main-title">Injetando elementos da DOM</h3>
+
+        <p class="main-paragraph">Outra forma de injetar elementos sem utilizar o innerHTML e o outerHTML é criar elementos dividindo-os em seus componentes fundamentais</p>
+
+        <ol>
+            <li>Crie o elemento com .createElement()</li>
+            <li>Crie o nó de texto que vai carregar o conteudo dentro do elemento .createTextNode()</li>
+            <li>Colocar o nó de texto dentro do elemento e no mesmo lugar correto do documento </li>
+            <li>Adicione o elemento a árvore da DOM </li>
+        </ol>
+
+        <h5>Vamos pegar o texto alternativo da imagem abaixo do altributo "alt" e adiciona-lo a uma nova tag figcaption, e por último deletar o conteúdo do alt.</h5>
+
+    <figure class="minha-imagem">
+      <img src="/images/mando.jpeg" alt="Imagem do mandaloriano e seus amigos">
+    </figure>
+
+    </section>
+    
+</body>
+</html>

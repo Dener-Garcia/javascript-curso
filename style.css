@@ -1,0 +1,36 @@
+
+
+.main-title {
+    background-color: rgb(196, 136, 136);
+}
+
+.blue{
+    background-color: #00f;
+}
+
+.fs24{
+    font-size: 24px;
+}
+
+.white{
+    color: #fff;
+}
+
+.hide{
+    overflow: hidden;
+    height: 0;
+}
+
+.show{
+    overflow: auto;
+    height: auto;
+}
+
+.circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: solid 2px blue;
+    border-radius: 100%;
+    z-index: 100;
+}

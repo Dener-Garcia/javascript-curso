@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="funcao.js" defer></script>
+</head>
+<body>
+
+    <h1>Funções</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <section>
+        <h3 class="main-title">Trabalhando com funções</h3>
+
+        <p class="main-paragraph">Funções servem para reaproveitar seu código</p>
+
+        <h3>Estrutura de uma função simples</h3>
+
+        <p>Ex: <code>function nome(parametros){//instrunções
+        }</code> </p>
+
+        <h3>Estrutura de uma função com return</h3>
+        <p>O return serve para parar a função e vai retornar o valor após ele, isso significa que aquela função ela vai rodar e ela vai ter um valor armezanado que você pode utilizar em outras funções por exemplo</p>
+
+        <p>Ex: <code>function nome(parametros){<br>//instrunções
+        <br>return }</code> </p>
+
+        <h3>Estrutura de uma função autoinvocável anõnima</h3>
+        <p>Uma expressão invocada imediatamente, você deve colocar um parentese no final dela como se estivesse chamando ela</p>
+
+        <p>Ex: <code>(<br>
+            function() {<br>
+            //instrunções
+        <br>return}</code> () </p>
+
+        <p>Ex. em aplicação aplicação: <code>(<br>
+            function(a, b) {<br>
+        return a + b}</code> (1, 2) </p>
+
+        <p>Função armazenada numa variável</p>
+
+        <p>const soma3 = (<br>
+            function() {<br>
+        return a + b</code> <br>
+        })(1, 2) <br>
+    console.log(soma3) </p>
+              
+    <h3>Estrutura de uma função Callback</h3>
+        <p>Basicamente é uma função passada como argumento para outra, utilizando callback você tem mais controle da ordem dde chamadas</p>
+
+        <p><code>const calcula = function(operacao, num1, num2){<br>
+            return operacao(num1,num2)<br>
+        }</code></p>
+
+        <p><code>const soma = function(num1, num2){<br>
+            return num1 + num2<br>
+        }</code></p>
+
+        <p><code>const sub = function(num1, num2){<br>
+            return num1 + num2<br>
+        }</code></p>
+
+        <p>const resultSoma = calc(soma, 1, 2)</p>
+        <p>const resultSub = calc(soma, 1, 2)</p>
+
+        <p>console.log(resultSub)</p>
+        <p>console.log(resultSoma)</p>
+
+        <h3>Estrutura de uma função com this</h3>
+        <p>Quando temos um objeto que tem uma função dentro dele nós chamamos essa função de metódo</p>
+
+        <h4>Veja mais no arquivo js dessa aula funcao.js</h4>
+
+        <p>O this retorna o firstName do objeto pessoa </p>
+        <code> const pessoa = {<br>
+            firstName: "Andre",<br>
+            lastName: "Soares",<br>
+            id: "1",<br>
+            fullName: function(){
+                return this.firstName + "" + this.lastName
+            },<br>
+            gedId: function(){
+                return this.id;
+            }<br>
+        }
+        <br>
+        pessoa.fullName()
+        // "Andre Soares"
+        <br>
+        pessoa.gedId()
+        // 1</code>
+
+        <h3>Estrutura de uma função com this num EVENTO</h3>
+        <p>Quando utilizamos o this num evento ele reotrno o elemento daquele evento veja mais no arquivo js</p>
+
+        <button class="btn-this" onclick="console.log(this)">this com evento</button>
+
+        <h3>Estrutura de uma arrow function</h3>
+        <p>Ela é equivalente a uma função anônima porem apos o = você usa () => {// instrunções}</p>
+
+        <p><code>const helloWorld = () =>{ <br>
+            return "hello world com arrow<br>
+        }</code></p>
+
+    </section>
+    
+</body>
+</html>

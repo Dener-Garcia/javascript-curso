@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="map.js" defer></script>
+</head>
+<body>
+
+    <h1>Funções</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <section>
+        <h3 class="main-title">Trabalhando com MAP</h3>
+
+        <p class="main-paragraph">Assim como na matematica quando temos um conjunto e depois ele passa por uma operacao e se torna outro conjunto</p>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <ul>
+            <li>2</li>
+            <li>4</li>
+            <li>6</li>
+        </ul>
+
+        <p>Mas como o conjunto 2 se transformou nesses numeros? eles passaram pela funcao map no caso</p>
+
+        <p>Lembrando que o map não modifica o array original ele cria um novo array</p>
+
+        <h3>Sintaxe</h3>
+        <code>array.map(callback, thisArg)</code><br>
+        <p>Vamos pegar uma array e receber 2 itens o callback, função a ser executada em casa elemento</p>
+
+        <code>callback(item, index, array)</code>
+
+        <h3 class="main-title">Trabalhando com forEach</h3>
+
+        <p class="main-paragraph"> O forEach tem a mesma sintaxe do map porem eu preciso por a operacao do forEach dentro de alguma constante pois ele nao retorna nada, entao preciso armazenar esse resultado em algum lugar </p>
+
+        <h3 class="main-title">Trabalhando com filter</h3>
+
+        <p class="main-paragraph"> Voce coloca todo seu array dentro de um filtro,e apenas os itens responderem a determinada condicao sao retornados </p>
+
+        <p>Ele cria um novo array somente com os itens novos</p>
+
+        <h3 class="main-title">Trabalhando com reduce</h3>
+
+        <p class="main-paragraph"> Ele executa uma funcao e todos os elementos do array e retorna um valor único, ou seja ele altera seu array pois vai retornar um valor diferente do que mandamos inicialmente </p>
+
+    </section>
