@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API e efetch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="apis.js" defer></script>
+</head>
+<body>
+
+    <h1>APIs</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <section>
+        <h3 class="main-title">Consumir APIs</h3>
+
+        <p class="main-paragraph">Aplication program interface, ela intermedia o back-end com o que temos no front-end</p>
+        
+        <h3 class="main-title">Metodo Fetch</h3>
+
+        <h4>sintaxe</h4>
+        <code>fetch(url, options)<br>
+        .then(response => response.json())<br>
+    .then(json => console.log(json))</code>
+
+    <p>O fetch reotrna uma promise e precisa que voce use uma await</p>
+
+    <h3>Exemplo de uso de API</h3>
+
+    <h3>Mostra gatinhos</h3>
+    <img id="gatos"><br>
+    <button id="troca-gato">Novo Gatinho</button>
+
+
+    </section>
