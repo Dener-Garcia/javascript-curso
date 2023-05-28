@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script type="module" src="jsmodels.mjs"  defer></script>
+</head>
+<body>
+
+    <h1>Models import e export</h1>
+
+    <a href="index.html">Voltar</a>
+
+    <section>
+        <h3 class="main-title">Módulos em JavaScrip</h3>
+
+        <p class="main-paragraph">Serve para organizar código, permite compartilhamento de variáveis em escopos diferentes</p>
+        
+        <h3 class="main-title">Exportar</h3>
+
+        <h4>Name export individual</h4>
+        <code>export function mostraIdade(pessoa){<br>
+        return "a idade dela ${pessoa.idade}<br>
+        }</code>
+        <br>
+        <br>
+        <code>export function mostraCidade(cidade){<br>
+            return "a cidade dela ${pessoa.cidade}<br>
+            }</code>
+            <br>
+            <h4>Name export individual</h4>
+            <code>function mostraIdade(pessoa){<br>
+            return "a idade dela ${pessoa.idade}<br>
+            }</code>
+            <br>
+            <br>
+            <code>function mostraCidade(cidade){<br>
+                return "a cidade dela ${pessoa.cidade}<br>
+                }</code>
+
+                <br>
+                <br>
+            <code>export{<br>
+            mostraIdade,<br>
+            mostraCidade<br>
+            }</code>  
+        
+            <h4>Default export</h4>
+            <p>Só pode haver um por arquivo, será o retorno padrão do seu arquivo</p>
+            <br>
+            <code>function mostraIdade(pessoa){<br>
+            return "a idade dela ${pessoa.idade}<br>
+            }</code>
+            <br>
+            <br>
+            <code>export default mostraIdade</code>
+
+            <h3 class="main-title">Importar</h3>
+            <h4>Name import</h4>
+        <code>import {funcao, variavel, classe} from "./arquivo.js<br>
+        return "a idade dela ${pessoa.idade}<br>
+        </code>
+        <p>Possso importar funcao, variaveis e ate classe</p>
+        <br>
+        <br>
+
+        <h4>Default import</h4>
+        <code>import mostraIdade from "./arquivo.js<br>
+        return "a idade dela ${pessoa.idade}<br>
+        </code>
+        <p>Lembre-se de usar o ./ para inicializar o caminho do arquivo</p>
+        <br>
+        <br>
+
+
+    </section>
