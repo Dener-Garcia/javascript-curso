@@ -2,7 +2,7 @@
 
 var container = document.querySelector(".container")
 
-container.style.backgroundColor = "blue"
+container.style.backgroundColor = "#3e038b"
 
 var botao = document.querySelector("button")
 
