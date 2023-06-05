@@ -1,3 +1,39 @@
+// funcao simples declaration function
+
+function digaOi(){
+    console.log("oi eu sou uma função simples")
+}
+
+digaOi() // esse tipo de funcao nao retorna nada tudo acontece dentro dela se atribuir a ela uma variavel nada vai ser mostrado repare
+
+const testeOi = digaOi()
+console.log(testeOi, "repare que a funcao foi chamada novamente porem nada aconteceu a variavel testeOi ela ficou como undefined")
+
+
+// funcao com parametros mas sem retorno declaration function
+
+function digaOiPara(nomePessoa){
+    console.log("Oi para " + nomePessoa)
+}
+
+digaOiPara("Dener")
+
+function digaOiParaTemplateString(namePessoa){
+    console.log(`Oi para ${namePessoa}`)
+}
+digaOiParaTemplateString("Mara")
+
+// funcao com retorno
+
+function digaOla(){
+    return "Ola sou uma funcao com retorno"
+}
+
+// agora para usar esse retorno preciso armazenar ele em algum lugar
+
+let ola = digaOla()
+console.log(ola)
+
 // exemplo funcao callback
 // na funcao anonima calcula o primeiro argumento chamado de operacao é uma funcao tambem, então a funcao calcula vai executar a funcao operacao com os dois argumentos que ela recebeu chamados num1 e num2
 

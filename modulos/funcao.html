@@ -20,10 +20,26 @@
 
         <p class="main-paragraph">Funções servem para reaproveitar seu código</p>
 
-        <h3>Estrutura de uma função simples</h3>
+        <h3>Estrutura de uma função simples function declaration</h3>
 
-        <p>Ex: <code>function nome(parametros){//instrunções
+        <p>Ex: <code>function nome_da_funcao(parametros){<br>
+            //instrunções<br>
         }</code> </p>
+
+        <p>Ex. <code>function digaOi(){<br>
+            console.log(digaOi)<br>
+        }</code></p>
+
+        <h3>Estrutura de uma função com parametros mas sem return</h3>
+        <p>Ex. <code>function digaOiPara(nomePessoa){<br>
+            console.log("Oi para" + nomePessoa)<br>
+            // outra forma em vez de concatenar voce pode usar template string console.log(`Oi para ${nomePessoa}`)<br>
+        }</code></p>
+
+        <code>digaOiPara("Dener")</code>
+
+        <p> Esse tipo de função não retorna nada, ou seja se eu criar uma variavel e atribuir a ela nada vai acontecer, ex var x = digaOi()<br>
+        console.log(x) bom meu resultado sera undefined</p>
 
         <h3>Estrutura de uma função com return</h3>
         <p>O return serve para parar a função e vai retornar o valor após ele, isso significa que aquela função ela vai rodar e ela vai ter um valor armezanado que você pode utilizar em outras funções por exemplo</p>
@@ -31,7 +47,14 @@
         <p>Ex: <code>function nome(parametros){<br>//instrunções
         <br>return }</code> </p>
 
-        <h3>Estrutura de uma função autoinvocável anõnima</h3>
+        <p>Ex<code>function digaOla(){<br>
+            return "ola" <br>
+        }</code><br><br>
+        <code>const x = digaOla()<br>
+        console.log(x)</code> 
+        </p>
+
+        <h3>Estrutura de uma função autoinvocável anônima</h3>
         <p>Uma expressão invocada imediatamente, você deve colocar um parentese no final dela como se estivesse chamando ela</p>
 
         <p>Ex: <code>(<br>
@@ -107,6 +130,8 @@
         <p><code>const helloWorld = () =>{ <br>
             return "hello world com arrow<br>
         }</code></p>
+
+        <a href="../exercicios/funcoes.html" target="_blank">Exercícios com funçoes</a>
 
     </section>
     
