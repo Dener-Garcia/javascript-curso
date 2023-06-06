@@ -5,6 +5,21 @@ for (let i = 0; i < 5; i++) {
     console.log(i)
 }
 
+// exerciocio for
+console.log("exercicio range de 5 numeros")
+
+const range5 = (a, b, c) => {
+    const array = []
+    for (let index = 1; index <= a; index++) {
+        array.push(index)    
+    }
+    return array
+}
+
+// como eu queria imprimir um array de 5 numeros apartir do numero 1 foi so jogar o 5 ao chamar a funcao e trocar o index de 0 para 1
+
+console.log(range5(5))
+
 // exemplo de um laco WHILE simples
 
 console.error("laco While")

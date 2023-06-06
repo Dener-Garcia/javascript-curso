@@ -54,25 +54,35 @@
         console.log(x)</code> 
         </p>
 
-        <h3>Estrutura de uma função autoinvocável anônima</h3>
-        <p>Uma expressão invocada imediatamente, você deve colocar um parentese no final dela como se estivesse chamando ela</p>
+        <h3>Estrutura de uma função autoinvocável anônima Function expression</h3>
+        <p>Uma expressão invocada imediatamente, você deve colocar um parentese no começo e no final dela como se estivesse chamando ela mesma. também posso atribuiu uma variável a uma função anônima</p>
 
         <p>Ex: <code>(<br>
-            function() {<br>
+            (function(a,b,c){<br>
             //instrunções
-        <br>return}</code> () </p>
+        <br> return a + b + c})</code></p>
 
-        <p>Ex. em aplicação aplicação: <code>(<br>
+        <p>Ex.: Passando parâmetros para essa função, no final dela coloque entre colchetes os parâmetros <code>(<br>
             function(a, b) {<br>
         return a + b}</code> (1, 2) </p>
 
         <p>Função armazenada numa variável</p>
 
-        <p>const soma3 = (<br>
-            function() {<br>
-        return a + b</code> <br>
-        })(1, 2) <br>
-    console.log(soma3) </p>
+        const somar = function (a,b,c){<br>
+            return a + b + c<br>
+        }<br>
+        const resuSomar = somar(30,30,30)
+        </code></p>
+
+    <h3>Estrutura de uma arrow function</h3>
+        <p>Uma funcao armazenada dentro de uma variavel, seria uma expression function sem palavra function e no lugar o =>, ela sempre sera uma funcao anonima</p>
+
+        <p><code>
+            const funcaoArrow = () => {<br>
+                //instrunções<br>
+                return algo<br>
+            }
+        </code></p>
               
     <h3>Estrutura de uma função Callback</h3>
         <p>Basicamente é uma função passada como argumento para outra, utilizando callback você tem mais controle da ordem dde chamadas</p>

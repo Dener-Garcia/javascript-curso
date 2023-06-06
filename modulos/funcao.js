@@ -32,7 +32,41 @@ function digaOla(){
 // agora para usar esse retorno preciso armazenar ele em algum lugar
 
 let ola = digaOla()
-console.log(ola)
+console.log(ola);
+
+// funcao anônima
+
+(function (a,b,c){
+    console.log("Sou uma funcao anonima")
+    return a + b + c
+}())
+
+// para usar esse tipo de funcao basta atribuir uma variavel a ela
+
+const somar = function (a,b,c){
+    return a + b + c
+}
+
+// mostrando o resultado de somar no console de duas formas diferentes, diretamente e jogando dentro de outra const
+
+console.log(somar(30,30,30))
+
+const resuSomar = somar(30,30,30)
+console.log(resuSomar)
+
+// criando variavel que sera atribuida a mesma funcao
+
+const outraSoma = somar
+console.log(outraSoma(30,30,30))
+
+// Arrow function
+
+const incrementaN = (n) =>{
+    console.log('Arrow function incrementaN')
+    return n + 1
+}
+
+console.log(incrementaN(99))
 
 // exemplo funcao callback
 // na funcao anonima calcula o primeiro argumento chamado de operacao é uma funcao tambem, então a funcao calcula vai executar a funcao operacao com os dois argumentos que ela recebeu chamados num1 e num2

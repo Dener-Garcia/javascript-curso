@@ -146,6 +146,8 @@ button:hover{
     min-width: 50%;
     max-width: 500px;
     display: flex;
+    margin: auto;
+    margin-top: 2rem;
     padding: 1rem 2rem;
     gap: 1rem;
     border: solid 2px #3d3d3d;
