@@ -2,7 +2,7 @@
 
 // começamos gerando uma constante para armazenar minha url porque eu posso fazer outras requisições de outra apis no futuro então para não escrever uma string toda vez
 
-const BASE_URL = 'https://thatcopy.pw/catapi/rest/'
+const BASE_URL = "https://api.github.com/users/dener-garcia"
 
 // criando funcao para carregar os gatinhos
 
@@ -10,13 +10,17 @@ const getCats = async () => {
     try{
     const dados = await fetch(BASE_URL)
     // aqui minha funcao vai retornar os dados de uma promise entao vamos pegar isso e jogar num json pois vamos receber em string
+    
     const meuJson = await dados.json()
+
+console.log(meuJson)
     // aqui eu decido o que vou retornar, devo olhar para api e ver qual dado eu quero
-    return meuJson.webpurl
+    return meuJson.avatar_url
 } catch(deuErro){
     console.error("seu erro foi:", deuErro.message)
 }
 }
+
 
 // interagindo com a dom para jogar a imagem nela
 

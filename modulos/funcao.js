@@ -92,6 +92,22 @@ const calcula = function(operacao, num1, num2){
     console.log(resultSub)
     console.log(resultSoma)
 
+// outros exemplos de funções com callback, passando uma funcao para outra
+
+console.log("higher order function")
+
+function run(fn){
+    fn()
+}
+
+function digaOlaFuncao(){
+    console.log("Funcao passada de parametro para outra funcao")
+}
+
+run(digaOlaFuncao) // chamei a funcao run passando a funcao digaOlafuncao como parametro para fn, como fn eh uma funcao() ela se chama
+
+
+
 // funcao com this exemplo
 
     const pessoa = {

@@ -1,14 +1,46 @@
 // exemplo do map
 
 const array1 = [1, 2, 3, 4, 5]
-console.log(array1)
+console.log(array1, "primeiro exemplo do map")
 
-array1.map((item) => item * 2 ) // retuno: [2, 4, 6, 8, 10]
+console.log(array1.map((item) => item * 2)) // retuno: [2, 4, 6, 8, 10]
+
+// outro exemplo de map imprimindo o ranking e arredondando para cima o ranking
+
+const jogadores = [
+{
+    nome: "Dener",
+    ranking: 9.8 
+},
+{
+    nome: "Herick",
+    ranking: 7.2 
+},
+{
+    nome: "Emilly",
+    ranking: 8.5 
+},
+{
+    nome: "Antonio",
+    ranking: 4.4 
+},
+]; // Aqui criei meu objeto
+
+const getranking = (rank, nam) =>{
+    console.log("entrou na funcao")
+    return  rank.ranking
+} // aqui criei uma arrow function que pega o elemento ranking do array de objetos jogadores e retorna ele
+
+console.log("segundo exemplo do map", jogadores
+        .map(getranking)
+        .map(Math.ceil) // metodo maty.ceil serve para arredondar pra cima
+        ) // imprimindo o valor
+
 
 // exemplo do forEach
 
 const array2 = [1, 2, 3, 4, 5]
-console.log(array2)
+console.log(array2, "primeiro exemplo forEach")
 
 array2.forEach((item) => item * 2 ) // retuno: [2, 4, 6, 8, 10]
 
@@ -74,7 +106,7 @@ function callback1(item){
 
 const array6 = [1, 23, 3, 6, 7, 20, 10, 2, 5, 6]
 
-console.log("usando minha funcao de filtrar um array so com pares", filtPares(array6))
+console.log("usando minha funcao para filtrar um array so com pares", filtPares(array6))
 
 // Comecando com o reduce
 
